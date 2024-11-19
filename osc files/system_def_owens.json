@@ -1,0 +1,242 @@
+{
+    "id": "owens-jainakanksha01",
+    "systemType": "LINUX",
+    "host": "owens",
+    "enabled": true,
+    "effectiveUserId": "${apiUserId}",
+    "defaultAuthnMethod": "PKI_KEYS",
+    "isDtn": false,
+    "rootDir": "/",
+    "port": 22,
+    "canExec": true,
+    "canRunBatch": true,
+    "jobRuntimes": [
+        {
+            "runtimeType": "SINGULARITY"
+        }
+    ],
+    "jobWorkingDir": "HOST_EVAL($HOME)/jobs/${JobUUID}",
+    "batchScheduler": "SLURM",
+    "batchDefaultLogicalQueue": "batch",
+    "batchLogicalQueues": [
+        {
+            "name": "batch",
+            "hpcQueueName": "batch",
+            "minNodeCount": 0,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 28,
+            "minMemoryMB": 0,
+            "minMinutes": 0,
+            "maxMinutes": 10080
+        },
+        {
+            "name": "condo-PYS1123",
+            "hpcQueueName": "condo-PYS1123",
+            "minNodeCount": 0,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 28,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 120820,
+            "minMinutes": 0,
+            "maxMinutes": 10080
+        },
+        {
+            "name": "condo-PYS1123-backfill-parallel",
+            "hpcQueueName": "condo-PYS1123-backfill-parallel",
+            "minNodeCount": 2,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 28,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 120820,
+            "minMinutes": 0,
+            "maxMinutes": 360
+        },
+        {
+            "name": "condo-PYS1123-backfill-serial",
+            "hpcQueueName": "condo-PYS1123-backfill-serial",
+            "minNodeCount": 0,
+            "maxNodeCount": 1,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 28,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 120820,
+            "minMinutes": 0,
+            "maxMinutes": 360
+        },
+        {
+            "name": "condo-PYS1124",
+            "hpcQueueName": "condo-PYS1124",
+            "minNodeCount": 0,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 28,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 120820,
+            "minMinutes": 0,
+            "maxMinutes": 10080
+        },
+        {
+            "name": "condo-PYS1124-backfill-parallel",
+            "hpcQueueName": "condo-PYS1124-backfill-parallel",
+            "minNodeCount": 2,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 28,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 120820,
+            "minMinutes": 0,
+            "maxMinutes": 360
+        },
+        {
+            "name": "condo-PYS1124-backfill-serial",
+            "hpcQueueName": "condo-PYS1124-backfill-serial",
+            "minNodeCount": 0,
+            "maxNodeCount": 1,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 28,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 120820,
+            "minMinutes": 0,
+            "maxMinutes": 360
+        },
+        {
+            "name": "debug",
+            "hpcQueueName": "debug",
+            "minNodeCount": 0,
+            "maxNodeCount": 2,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 28,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 120820,
+            "minMinutes": 0,
+            "maxMinutes": 60
+        },
+        {
+            "name": "gpubackfill-parallel",
+            "hpcQueueName": "gpubackfill-parallel",
+            "minNodeCount": 2,
+            "maxNodeCount": 81,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 28,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 120820,
+            "minMinutes": 0,
+            "maxMinutes": 240
+        },
+        {
+            "name": "gpubackfill-serial",
+            "hpcQueueName": "gpubackfill-serial",
+            "minNodeCount": 0,
+            "maxNodeCount": 1,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 28,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 120820,
+            "minMinutes": 0,
+            "maxMinutes": 240
+        },
+        {
+            "name": "gpudebug",
+            "hpcQueueName": "gpudebug",
+            "minNodeCount": 0,
+            "maxNodeCount": 2,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 28,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 120820,
+            "minMinutes": 0,
+            "maxMinutes": 60
+        },
+        {
+            "name": "gpuparallel",
+            "hpcQueueName": "gpuparallel",
+            "minNodeCount": 2,
+            "maxNodeCount": 8,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 28,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 120820,
+            "minMinutes": 0,
+            "maxMinutes": 5760
+        },
+        {
+            "name": "gpuserial",
+            "hpcQueueName": "gpuserial",
+            "minNodeCount": 0,
+            "maxNodeCount": 1,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 28,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 120820,
+            "minMinutes": 0,
+            "maxMinutes": 10080
+        },
+        {
+            "name": "hugemem",
+            "hpcQueueName": "hugemem",
+            "minNodeCount": 0,
+            "maxNodeCount": 1,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 48,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 1528800,
+            "minMinutes": 0,
+            "maxMinutes": 10080
+        },
+        {
+            "name": "hugemem-parallel",
+            "hpcQueueName": "hugemem-parallel",
+            "minNodeCount": 2,
+            "maxNodeCount": 16,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 48,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 1528800,
+            "minMinutes": 0,
+            "maxMinutes": 5760
+        },
+        {
+            "name": "longserial",
+            "hpcQueueName": "longserial",
+            "minNodeCount": 0,
+            "maxNodeCount": 1,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 28,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 120820,
+            "minMinutes": 0,
+            "maxMinutes": 20160
+        },
+        {
+            "name": "parallel",
+            "hpcQueueName": "parallel",
+            "minNodeCount": 2,
+            "maxNodeCount": 81,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 28,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 120820,
+            "minMinutes": 0,
+            "maxMinutes": 5760
+        },
+        {
+            "name": "serial",
+            "hpcQueueName": "serial",
+            "minNodeCount": 0,
+            "maxNodeCount": 1,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 28,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 120820,
+            "minMinutes": 0,
+            "maxMinutes": 10080
+        },
+        {
+            "name": "systems",
+            "hpcQueueName": "systems",
+            "minNodeCount": 0,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 28,
+            "minMemoryMB": 0,
+            "minMinutes": 0
+        }
+    ]
+}

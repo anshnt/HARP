@@ -1,0 +1,5 @@
+﻿sc_system,service_type ,rate,SU_Cost,unit_per_hour
+OSC,CPU,0.003,1,SU/core hour
+OSC,GPU,0.09,30,SU/GPU hour
+TACC,CPU,1,1,SU/node hour
+TACC,GPU,1.67,,SU/node hour

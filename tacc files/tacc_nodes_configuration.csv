@@ -1,0 +1,9 @@
+﻿system_name,node_type,processor_name,cores_per_node,clock_rate_Ghz,gpu,gpu_clock_rate,peak_node_performance,precision_peak_node_performance,memory_per_node,memory_type,local_disk_GB,network
+Frontera,Primary Computing,Intel 8280 “Cascade Lake”,56 (28/socket),2.7,No,null,4.8 TF,double,192,DDR-4 ,480,"Mellanox Infiniband, HDR-100"
+Frontera,Liquid Submerged,Intel Xeon CPU E5-2620 v4,32,2.1,360 - NVIDIA Quadro RTX 5000 (4/Node),2.1,4 PF,single,128,DDR-4 ,240,"Mellanox Infiniband, FDR"
+Stampede2,Knights Landing,Intel Knights Landing,68,,No,null,18 PF,single,96,DDR-3,,"100 Gb/sec Intel Omni-Path, fat tree topology, six core switches"
+Stampede2,Skylake,Intel Xeon Skylake,48,,No,null,18 PF,single,192,DDR-3,,"100 Gb/sec Intel Omni-Path, fat tree topology, six core switches"
+Lonestar6,Dielectric Liquid Cooled Compute,2x AMD EPYC 7763,128 (64/socket),2.45,No,null,5 TF,single,256,DDR-4 ,144GB/tmp partition on 288GB SSD,Mellanox Infiniband HDR-100
+Lonestar6,Air Cooled GPU Racks,2x AMD EPYC 7763,128 (64/socket),2.45,2x NVIDIA A100 GPUs,40 GB HBM2,4.8 TF,double,null,null,,
+Stallion,Head Nodes,2x Intel Sandy Bridge 2687W,8,3.1,No,null,null,null,128,DDR-3,1000,Dell PowerVault NX3100 36TB Disk Space
+Stallion,Render Nodes,36x Intel Sandy Bridge 2667W,6,2.9,No,null,null,null,64GB DDR-3 (1.15TB aggregate)(1.15TB aggregate),DDR-3,64GB DDR-3 (1.15TB aggregate),

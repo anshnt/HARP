@@ -1,0 +1,9 @@
+﻿SCCL_UUID,sc_system,cluster_name
+1,osc,owens
+2,osc,ascend
+3,osc,pitzer
+4,tacc,frontera
+5,tacc,lonestar6
+6,tacc,stampede2
+7,tacc,stampede3
+8,tacc,stallion

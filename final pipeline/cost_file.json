@@ -1,0 +1,28 @@
+[{
+  "sc_system": "OSC",
+  "service_type ": "CPU",
+  "rate": 0.003,
+  "SU_Cost": 1,
+  "unit_per_hour": "SU/core hour"
+},
+{
+  "sc_system": "OSC",
+  "service_type ": "GPU",
+  "rate": 0.09,
+  "SU_Cost": 30,
+  "unit_per_hour": "SU/GPU hour"
+},
+{
+  "sc_system": "TACC",
+  "service_type ": "CPU",
+  "rate": 1,
+  "SU_Cost": 1,
+  "unit_per_hour": "SU/node hour"
+},
+{
+  "sc_system": "TACC",
+  "service_type ": "GPU",
+  "rate": 1.67,
+  "SU_Cost": 60,
+  "unit_per_hour": "SU/node hour"
+}]

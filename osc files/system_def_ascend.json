@@ -1,0 +1,114 @@
+{
+    "id": "ascend-jainakanksha01",
+    "systemType": "LINUX",
+    "host": "ascend",
+    "enabled": true,
+    "effectiveUserId": "${apiUserId}",
+    "defaultAuthnMethod": "PKI_KEYS",
+    "isDtn": false,
+    "rootDir": "/",
+    "port": 22,
+    "canExec": true,
+    "canRunBatch": true,
+    "jobRuntimes": [
+        {
+            "runtimeType": "SINGULARITY"
+        }
+    ],
+    "jobWorkingDir": "HOST_EVAL($HOME)/jobs/${JobUUID}",
+    "batchScheduler": "SLURM",
+    "batchDefaultLogicalQueue": "batch",
+    "batchLogicalQueues": [
+        {
+            "name": "batch",
+            "hpcQueueName": "batch",
+            "minNodeCount": 0,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 96,
+            "minMemoryMB": 0,
+            "minMinutes": 0,
+            "maxMinutes": 10080
+        },
+        {
+            "name": "cpuonly",
+            "hpcQueueName": "cpuonly",
+            "minNodeCount": 0,
+            "maxNodeCount": 4,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 84,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 900816,
+            "minMinutes": 0,
+            "maxMinutes": 5760
+        },
+        {
+            "name": "debug",
+            "hpcQueueName": "debug",
+            "minNodeCount": 0,
+            "maxNodeCount": 2,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 88,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 943712,
+            "minMinutes": 0,
+            "maxMinutes": 60
+        },
+        {
+            "name": "gpu",
+            "hpcQueueName": "gpu",
+            "minNodeCount": 0,
+            "maxNodeCount": 4,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 88,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 943712,
+            "minMinutes": 0,
+            "maxMinutes": 10080
+        },
+        {
+            "name": "gpu-dense",
+            "hpcQueueName": "gpu-dense",
+            "minNodeCount": 0,
+            "maxNodeCount": 4,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 88,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 943712,
+            "minMinutes": 0,
+            "maxMinutes": 10080
+        },
+        {
+            "name": "gpu-mixed",
+            "hpcQueueName": "gpu-mixed",
+            "minNodeCount": 0,
+            "maxNodeCount": 4,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 88,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 943712,
+            "minMinutes": 0,
+            "maxMinutes": 10080
+        },
+        {
+            "name": "preemptible",
+            "hpcQueueName": "preemptible",
+            "minNodeCount": 0,
+            "maxNodeCount": 4,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 88,
+            "minMemoryMB": 0,
+            "maxMemoryMB": 943712,
+            "minMinutes": 0,
+            "maxMinutes": 1440
+        },
+        {
+            "name": "systems",
+            "hpcQueueName": "systems",
+            "minNodeCount": 0,
+            "minCoresPerNode": 1,
+            "maxCoresPerNode": 96,
+            "minMemoryMB": 0,
+            "minMinutes": 0
+        }
+    ]
+}

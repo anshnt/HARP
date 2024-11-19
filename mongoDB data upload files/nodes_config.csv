@@ -1,0 +1,24 @@
+﻿SCCL_UUID,system_name,cluster_name,node_type,total_compute_nodes,processor_type,processor_cores,processor_clock_speed,memory_size_GB,processor_model,processor_architecture,sockets_count,gpu_type,gpu_model,gpu_peak_performance,gpu_memory,disk_space
+1,osc,owens,Dense Compute,648,Intel Xeon E5-2680 v4,14,2.4,128,Dell PowerEdge C6320,Broadwell,2,-,-,-,-,
+1,osc,owens,GPU Compute,160,Intel Xeon E5-2680 v4,14,2.4,128,Dell PowerEdge R730,Broadwell,2,NVIDIA,Tesla P100,5.3 TF,16 GB,
+1,osc,owens,Huge Memory,16,Intel Xeon E5-4830 v3,12,2.1,1536,Dell PowerEdge R930 ,Haswell,4,-,,,2 TB,
+3,osc,pitzer,Standard Dense Compute Node (2018),224,Dual Intel Xeon 6148s,40,2.4,192,,Skylakes,,,,,,1 TB
+3,osc,pitzer,Standard Dense Compute Node (2020),340,Dual Intel Xeon 8268s,48,2.9,192,,Cascade Lakes,,,,,,1 TB
+3,osc,pitzer,Dual GPU Compute Node (2018),32,Dual Intel Xeon 6148s,40,2.4,384,,,,Dual NVIDIA,Volta V100,,16,1TB
+3,osc,pitzer,Dual GPU Compute Node (2020),42,Dual Intel Xeon 8268s,48,2.9,384,,,,Dual NVIDIA,Volta V101,,32,1TB
+3,osc,pitzer,Quad GPU Compute Node,4,Dual Intel Xeon 8260s,48,2.4,768,,Cascade Lakes,,Quad NVIDIA,Volta V100s,,32,4 TB
+3,osc,pitzer,Large Memory Compute Node (2018),4,Quad Processor Intel Xeon 6148,80,2.4,3000,,Skylakes,,,,,,1 TB
+3,osc,pitzer,Large Memory Compute Node (2020),12,Dual Intel Xeon 8268,48,2.9,768,,Cascade Lakes,,,,,,0.5 TB
+2,osc,ascend,Power Edge XE 8545,24,AMD EPYC 7643 (Milan),44,2.3,921,EPYC 7643,Milan,2,NVIDIA,A100,,90,12.8 TB NVMe
+4,tacc,frontera,CLX Compute,8368,Intel Xeon Platinum 8280,56,2.7 GHz,192,Intel Xeon 8280,Cascade Lake,2,N/A,N/A,N/A,N/A,"144GB /tmp, 240GB SSD"
+4,tacc,frontera,Large Memory,16,Intel Xeon Platinum 8280M,112,2.7 GHz,2100,Intel Xeon 8280M,Cascade Lake,4,N/A,N/A,N/A,N/A,"144GB /tmp, 240GB SSD, 833GB /mnt/fsdax[0,1,2,3], 3.2TB usable local storage"
+4,tacc,frontera,GPU Nodes,90,2 Intel Xeon E5-2620 v4,N/A,N/A,128,Intel Xeon E5-2620 v4,Broadwell,N/A,4 NVIDIA Quadro RTX 5000,NVIDIA Quadro RTX 5000,N/A,16GB GDDR6,"144GB /tmp, 240GB SSD"
+5,tacc,lonestart6,Compute Node,560,2x AMD EPYC 7763,128,2.45,256,,Milan,2,,,,,288 GB
+5,tacc,lonestart6,GPU Nodes,84,2x AMD EPYC 7763,128,2.45 GHz,256,,Milan,2,3x NVIDIA A100 PCIE,NVIDIA A100 PCIE 40GB,"9.7 TFlops (DP), 312 TFlops (FP16)",40GB HBM2,288GB /tmp
+5,tacc,lonestart6,GPU Nodes,4,2x AMD EPYC 9454,96,2.75 GHz,384,,Genoa,2,2x NVIDIA H100 PCIE,NVIDIA H100 PCIE,"26 TFlops (DP), 1513 TFlops (FP16)",80GB HBM2e,288GB /tmp
+8,tacc,stallion,Head Node,1,Intel Xeon,16,3.1 GHz,128,Sandy Bridge 2687W,,2,NVIDIA,Quadro K5000,,,1 TB local disk
+8,tacc,stallion,Rendering Node,18,Intel Xeon,12,2.9 GHz,64,Sandy Bridge 2667W,,2,NVIDIA,Quadro K5000,,,1 TB local disk
+7,tacc,stampede3,Sapphire Rapids,560,Intel Xeon MAX 9480,112,1.9GHz,128,Sapphire Rapids HBM,,2,,,,,150 GB /tmp partition
+7,tacc,stampede3,Ponte Vecchio,20,Intel Xeon Platinum 8480+,112,2.0 GHz,512,Ponte Vecchio,,2,Intel,Max 1550s,,128 GB HBM,150 GB /tmp partition
+7,tacc,stampede3,SKX Compute Node,1060,Intel Xeon Platinum 8160,48,2.1GHz,192,Skylake,,2,,,,,90 GB /tmp
+7,tacc,stampede3,ICX  Compute Node,224,Intel Xeon Platinum 8380,80,2.3 GHz,256,Ice Lake,,2,,,,,200 GB /tmp partition

@@ -1,0 +1,5 @@
+﻿Service type,Cost
+Standard compute,0.003
+Huge memory compute,0.004
+GPU compute,0.09
+Project storage,3.2

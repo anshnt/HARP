@@ -1,0 +1,17 @@
+﻿cluster_name,number_of_nodes,sockets,processor_name,cores,memory_GB,Ghz_of_processor,node_type,GPU,login nodes,additional details
+owens,824,2,Intel Xeon E5-2680 v4 (Broadwell),14,128,2.4,Dense Compute,None,No,"Dell PowerEdge C6320 two-socket servers with Intel Xeon E5-2680 v4 (Broadwell, 14 cores, 2.40 GHz) processors, 128 GB memory"
+owens,160,2,Intel Xeon E5-2680 v4 (Broadwell),14,128,2.4,GPU Compute,NVIDIA Tesla P100,No,"Dell PowerEdge R730 two-socket servers with Intel Xeon E5-2680 v4 (Broadwell, 14 cores, 2.40 GHz) processors, 128 GB memory"
+owens,16,4,Intel Xeon E5-4830 v3 (Haswell),12,1536,2.1,Analytics,None,No,"Dell PowerEdge R930 four-socket server with Intel Xeon E5-4830 v3 (Haswell 12 core, 2.10 GHz) processors, 1,536 GB memory, 12 x 2 TB drives"
+owens,4,,Intel Xeon E5-2680  (Broadwell),28,256,,Login,None,IP address: 192.148.247.[141-144],"Intel Xeon E5-2680 (Broadwell) CPUs, 28 cores/node and 256 GB of memory/node, IP address: 192.148.247.[141-144]"
+ascend,24,2,AMD EPYC 7643 (Milan),44,921,2.3,Power Edge XE 8545,NVIDIA A100 (4 GPUs),Yes,"2 AMD EPYC 7643 (Milan) processors, 2,112 total usable cores, 12.8TB NVMe internal storage, Mellanox/NVIDIA 200 Gbps HDR InfiniBand, 1.95 petaflops"
+ascend,2,,,,,,Login,,IP address: 192.148.247.[180-181],IP address: 192.148.247.[180-181]
+pitzer,,,,,,,,,,
+pitzer,,,,,,,,,,
+pitzer,224,,Dual Intel Xeon 6148s Skylakes,40,192,2.4,Standard Dense Compute,None,No,1 TB disk space
+pitzer,340,,Dual Intel Xeon 8268s Cascade Lakes,48,192,2.9,Standard Dense Compute,None,No,1 TB disk space
+pitzer,32,,Dual Intel Xeon 6148s,40,384,2.4,Dual GPU Compute,Dual NVIDIA Volta V100 w/ 16 GB GPU memory,No,1 TB disk space
+pitzer,42,,Dual Intel Xeon 6148s,48,384,2.9,Dual GPU Compute,Dual NVIDIA Volta V100 w/32 GB GPU memory,No,1 TB disk space
+pitzer,4,,Dual Intel Xeon 8260s Cascade Lakes,48,768,2.4,Quad GPU Compute,Quad NVIDIA Volta V100s w/32 GB GPU memory and NVLink,No,4 TB disk space
+pitzer,4,,Quad Processor Intel Xeon 6148 Skylakes,80,3000,2.4,Large Memory Compute,None,No,1 TB disk space
+pitzer,12,,Dual Intel Xeon 8268 Cascade Lakes,48,768,2.9,Large Memory Compute,None,No,0.5 TB disk space
+pitzer,4,,Dual Intel Xeon 6148s,,368,,Interactive Login ,None,IP address: 192.148.247.[176-179],
